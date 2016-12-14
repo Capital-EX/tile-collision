@@ -40,7 +40,7 @@ function t.new(getTile,tileWidth,tileHeight,isResolvable,heightmaps,startzero)
 		tileHeight  = tileHeight,
 		isResolvable= isResolvable,
 		heightmaps  = heightmaps or {},
-		startzero   = startzero == nil and true or startzero,
+		startzero   = startzero or false,
 	}
 	return setmetatable(o,t)
 end
